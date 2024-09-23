@@ -71,7 +71,9 @@ color = c(randomColor(), randomColor(), randomColor(), randomColor(), randomColo
 
 p2 <- ggplot(team_data, aes(x = hobby)) +
   geom_bar(fill = sample(color, 5))
-p2
+p2 + labs(x = "Hobby",
+          y = "No. of People",
+          title = "Trendsetters' Hobbies")
 ```
 
 Only approximately 1 entry per bar doesn't create a useful graph.
